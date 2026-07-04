@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
-.navegadorpadre{
-  font-family:"Montserrat",sans-serif;
-  font-size: 17px;
-  background-color: #021031;
+.navegadorpadre {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    background-color: #021031;
 }
-.logomundial{
-  height: 150px;
-  width: auto;
+
+.logomundial {
+    height: 150px;
+    width: auto;
 }
-.letrasnav{
-  color: white;
+
+.letrasnav {
+    color: white;
 }
 
 .titulo-login {
@@ -22,13 +24,13 @@
     font-size: 1.1rem;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     background-color: #01081a;
     color: #ffffff;
 }
 
-.textoh2{
-  color:  #021031;
+.textoh2 {
+    color: #021031;
 }
 
 
@@ -42,7 +44,7 @@
     transition: background-color 0.3s ease;
 }
 
-.btn-contacto:hover{
+.btn-contacto:hover {
     background-color: #01081a;
     color: #ffffff;
 }
