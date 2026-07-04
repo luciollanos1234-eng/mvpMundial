@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingresá a tu cuenta de MVP Mundial. Iniciá sesión de forma rápida y segura para gestionar tu perfil, revisar estadísticas exclusivas y conectar con la pasión del fútbol.">
+    <meta name="keywords" content="iniciar sesión MVP mundial, login fútbol, acceso comunidad deportiva, mi cuenta MVP, ingresar perfil, panel de estadísticas">
+    <meta name="author" content="rosario ojeda, alejandro fourmantin, lucio llanos">
+    <link rel="shortcut icon" href="../contenido/imagenes/logo.favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ingresa a tu cuenta | MVPmundial</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navegadorpadre p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../contenido/imagenes/LOGO.png" alt="logo"
+                        class="logomundial"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="../index.html">HOGAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="../pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" href="./pages/login.html">ACCESO</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+
+                        <h2 class="text-center mb-4 fw-bold textoh2">¡Bienvenido de nuevo!</h2>
+                        <p class="text-center text-muted mb-4">Ingresá tus datos para acceder a tu cuenta.</p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label fw-semibold">Correo Electrónico</label>
+                                <input type="email" class="form-control form-control-lg" id="emailInput"
+                                    placeholder="tunombre@email.com" minlength="8" maxlength="50" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="passInput" class="form-label fw-semibold">Contraseña</label>
+                                <input type="password" class="form-control form-control-lg" id="passInput"
+                                    placeholder="********" minlength="8" maxlength="20" required>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="recordarme">
+                                    <label class="form-check-label" for="recordarme">Recordarme</label>
+                                </div>
+                                <a href="#" class="text-decoration-none text-primary">¿Olvidaste tu clave?</a>
+                            </div>
+
+                            <button type="submit" class="btn text-white w-100 py-2 fw-bold btn-login">Ingresar a mi
+                                cuenta</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
