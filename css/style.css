@@ -8,6 +8,8 @@
   margin: 20px;
   justify-content: center;
   justify-content: space-around;
+  
+  }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 .navegadorpadre {
@@ -83,7 +85,7 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-=======
+
 .navegadorpadre{
   font-family:"Montserrat",sans-serif;
   font-size: 17px;
