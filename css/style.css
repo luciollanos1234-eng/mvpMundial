@@ -56,3 +56,20 @@
 .titulo-nosotros {
     color: #021031;
 }
+
+.subtitulo-nosotros {
+    color: #021031;
+}
+
+
+.bg-footer {
+    background-color: #021031;
+}
+
+.separador-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.texto-copyright {
+    color: rgba(255, 255, 255, 0.7);
+}
+
