@@ -1,5 +1,6 @@
 
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 .figu {
   object-fit: cover;
@@ -8,10 +9,9 @@
   margin: 20px;
   justify-content: center;
   justify-content: space-around;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 .navegadorpadre {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-family:);
     font-size: 17px;
     background-color: #021031;
 }
