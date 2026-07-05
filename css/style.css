@@ -10,6 +10,80 @@
   justify-content: space-around;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
+.navegadorpadre {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    background-color: #021031;
+}
+
+.logomundial {
+    height: 150px;
+    width: auto;
+}
+.nav-link{
+    transition: transform 0.2s; 
+    display: inline-block; 
+}
+
+.nav-link:hover{
+    transform: scale(1.1); 
+}
+
+.titulo-login {
+    color: #021031;
+}
+
+.btn-login {
+    background-color: #021031;
+    font-size: 1.1rem;
+}
+
+.btn-login:hover {
+    background-color: #01081a;
+    color: #ffffff;
+}
+
+.textoh2 {
+    color: #021031;
+}
+
+
+.titulo-contacto {
+    color: #021031;
+}
+
+.btn-contacto {
+    background-color: #021031;
+    font-size: 1.1rem;
+}
+
+.btn-contacto:hover {
+    background-color: #01081a;
+    color: #ffffff;
+}
+
+
+.titulo-nosotros {
+    color: #021031;
+}
+
+.subtitulo-nosotros {
+    color: #021031;
+}
+
+
+.bg-footer {
+    background-color: #021031;
+}
+
+.separador-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.texto-copyright {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+=======
 .navegadorpadre{
   font-family:"Montserrat",sans-serif;
   font-size: 17px;
@@ -40,5 +114,4 @@
   height: 110px;
   margin: 5px;
   object-fit: contain;
-  
 }
