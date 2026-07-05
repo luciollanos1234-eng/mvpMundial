@@ -31,76 +31,87 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="../index.html">HOGAR</a>
+                            <a class="nav-link text-white fw-semibold mx-2" href="../index.html">HOGAR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="../pages/contacto.html">CONTACTO</a>
+                            <a class="nav-link text-white fw-semibold mx-2" href="../pages/contacto.html">CONTACTO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="../pages/nosotros.html">NOSOTROS</a>
+                            <a class="nav-link text-white fw-semibold mx-2" href="../pages/nosotros.html">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-semibold" href="../pages/login.html">ACCESO</a>
+                            <a class="nav-link text-white fw-semibold mx-2" href="../pages/login.html">ACCESO</a>
                         </li>
                 </div>
             </div>
         </nav>
     </header>
     <main class="container mt-5 pt-5 mb-5">
-        <h2 class="text-center mb-5 fw-bold titulo-contacto">Contactanos</h2>
 
-        <div class="row g-5 justify-content-center">
 
-            <div class="col-md-7 col-lg-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="nombreInput" class="form-label fw-semibold">Nombre completo</label>
-                        <input type="text" class="form-control form-control-lg" id="nombreInput"
-                            placeholder="Juan Pérez" required>
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+
+                <h2 class="text-center mb-5 fw-bold titulo-contacto">Contactanos</h2>
+
+                <div class="row g-5 justify-content-center">
+
+
+                    <div class="col-md-7 col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombreInput" class="form-label fw-semibold">Nombre completo</label>
+                                <input type="text" class="form-control form-control-lg" id="nombreInput"
+                                    placeholder="Juan Pérez" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="emailContacto" class="form-label fw-semibold">Correo Electrónico</label>
+                                <input type="email" class="form-control form-control-lg" id="emailContacto"
+                                    placeholder="tunombre@email.com" minlength="8" maxlength="50" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="mensajeInput" class="form-label fw-semibold">Tu Mensaje</label>
+                                <textarea class="form-control" id="mensajeInput" rows="5"
+                                    placeholder="¿En qué te podemos ayudar?" minlength="5" maxlength="50"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn text-white w-100 py-2 fw-bold btn-contacto">Enviar
+                                Mensaje</button>
+                        </form>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="emailContacto" class="form-label fw-semibold">Correo Electrónico</label>
-                        <input type="email" class="form-control form-control-lg" id="emailContacto"
-                            placeholder="tunombre@email.com" minlength="8" maxlength="50" required>
-                    </div>
 
-                    <div class="mb-4">
-                        <label for="mensajeInput" class="form-label fw-semibold">Tu Mensaje</label>
-                        <textarea class="form-control" id="mensajeInput" rows="5"
-                            placeholder="¿En qué te podemos ayudar?" minlength="5" maxlength="50" required></textarea>
-                    </div>
+                    <div class="col-md-5 col-lg-5">
 
-                    <button type="submit" class="btn text-white w-100 py-2 fw-bold btn-contacto">Enviar Mensaje</button>
-                </form>
-            </div>
 
-            <div class="col-md-5 col-lg-4">
-                <div class="card shadow-sm border-0 rounded-4 h-100">
-                    <div class="card-body p-4 d-flex flex-column justify-content-center">
+                        <div class="p-4 bg-light rounded-4 h-100 d-flex flex-column justify-content-center">
 
-                        <h4 class="fw-bold mb-3">Atención Personalizada</h4>
-                        <p class="text-muted mb-4">Somos una plataforma 100% digital. No tenemos local físico, pero
-                            estamos siempre
-                            en línea para resolver tus dudas al instante.</p>
+                            <h4 class="fw-bold mb-3">Atención Personalizada</h4>
+                            <p class="text-muted mb-4">Somos una plataforma 100% digital. No tenemos local físico, pero
+                                estamos siempre en línea para resolver tus dudas al instante.</p>
 
-                        <div class="mb-4">
-                            <span class="fw-bold d-block">Correo:</span>
-                            <a href="mailto:info@mvpmundial.com"
-                                class="text-decoration-none text-primary">info@mvpmundial.com</a>
+                            <div class="mb-4">
+                                <span class="fw-bold d-block">Correo:</span>
+                                <a href="mailto:info@mvpmundial.com"
+                                    class="text-decoration-none text-primary">info@mvpmundial.com</a>
+                            </div>
+
+                            <div>
+                                <span class="fw-bold d-block mb-2">Línea Directa:</span>
+                                <a href="#" target="_blank" class="btn btn-success w-100 fw-bold py-2 shadow-sm">
+                                    Chateá con nosotros
+                                </a>
+                            </div>
+
                         </div>
-
-                        <div>
-                            <span class="fw-bold d-block mb-2">Línea Directa:</span>
-                            <a href="#" target="_blank" class="btn btn-success w-100 fw-bold py-2 shadow-sm">
-                                Chateá con nosotros
-                            </a>
-                        </div>
-
                     </div>
+
                 </div>
             </div>
-
         </div>
     </main>
     <footer class="pt-4 pb-3 bg-footer text-white">
