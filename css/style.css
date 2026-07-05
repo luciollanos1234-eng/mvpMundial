@@ -1,3 +1,13 @@
+
+
+
+.figu {
+  object-fit: cover;
+  display: flex;
+  display: inline-block;
+  margin: 20px;
+  justify-content: center;
+  justify-content: space-around;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 .navegadorpadre {
@@ -73,3 +83,35 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+=======
+.navegadorpadre{
+  font-family:"Montserrat",sans-serif;
+  font-size: 17px;
+}
+.logomundial{
+  height: 180px;
+  width: auto;
+}
+
+.equipos {
+  display: flex;
+  justify-content: end;
+}
+.container-padre {
+  margin: 50px;
+  background-color: black;
+  padding: 15px;
+  width: 810px;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+
+.figu {
+  width: 105px;
+  height: 110px;
+  margin: 5px;
+  object-fit: contain;
+}
