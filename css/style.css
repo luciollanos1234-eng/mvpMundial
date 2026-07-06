@@ -103,6 +103,8 @@
 main {
   background-image: url(../contenido/imagenes/Estadio.jpg);
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 /* CONTENEDOR PADRE */
 .container {
