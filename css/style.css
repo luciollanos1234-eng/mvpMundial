@@ -63,7 +63,9 @@
 }
 .texto-copyright {
     color: rgba(255, 255, 255, 0.7);
-.navegadorpadre{
+
+}
+.navegadorpadre {
   font-family:"Montserrat",sans-serif;
   font-size: 17px;
 }
