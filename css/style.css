@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  /* colores */
+  --color-primary: #021031;
+  --color-secondary: #3a954a;
+  --color-danger: #d33b45;
+  --color-texto: white;
+  --color-subtitulos: #ebebeb;
+  --color-cards: #021031b6;
+    /* colores */
+    --color-primary: #021031;
+    --color-secondary: #3a954a;
+    --color-danger: #d33b45;
+    --color-texto: white;
+    --color-subtitulos: #ebebeb;
+    --color-dorado-oscuro: #D4AF37;
+
+  /* estilos para titulos */
+  --font-family: "Montserrat", sans-serif;
+  --font-size: 17px;
+  --font-grosor: 600;
+  --font-background:#09ff008a;
+
+  /* ---------- */
+
+  /* bordes */
+  --border-radius: 1rem;
+  --border-none: 0;
+
+  /* animaciones */
+}
+main {
+  background-image: url(../contenido/imagenes/Estadio.jpg);
+  background-size: cover;
+  filter: brightness(55%);
+}
+.figu {
+  object-fit: cover;
+  display: flex;
+  display: inline-block;
+  margin: 20px;
+  justify-content: center;
+  justify-content: space-around;
+}
+.navegadorpadre {
+  font-family: var(--font-family);
+  font-size: 17px;
+  background-color: var(--color-primary);
+}
+.logomundial {
+  height: 120px;
+  height: 150px;
+  width: auto;
+}
+.nav-link {
+  transition: transform 0.2s;
+  display: inline-block;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+}
+.titulo-login {
+  color: var(--color-primary);
+}
+.btn-login {
+  background-color: var(--color-primary);
+  font-size: 1.1rem;
+}
+.btn-login:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+.textoh2 {
+  color: var(--color-primary);
+}
+.titulo-contacto {
+  color: var(--color-primary);
+}
+.btn-contacto {
+  background-color: var(--color-primary);
+  font-size: 1.1rem;
+}
+.btn-contacto:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+.titulo-nosotros {
+  color: var(--color-primary);
+}
+.subtitulo-nosotros {
+  color: var(--color-primary);
+}
+.bg-footer {
+  background-color: var(--color-primary);
+}
+.separador-footer {
+  border-top: 1px solid var(--color-subtitulos);
+}
+.texto-copyright {
+  color: rgba(255, 255, 255, 0.7);
+}
+.navegadorpadre {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.logomundial {
+  height: 180px;
+  width: auto;
+}
+.equipos {
+  display: flex;
+  justify-content: end;
+}
+.container-padre {
+  margin: 10px;
+  background-color:var(--color-cards);
+  padding: 15px;
+  width: 810px;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+.figu {
+  width: 105px;
+  height: 110px;
+  margin: 5px;
+  object-fit: contain;
+   transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+.figu:hover {
+   transform: scale(1.1); 
+}
+.nombres {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+ /*  margin-left: 500px; */
+   font-size: 2rem;
+  font-size: 2rem;       
+  color: var(--color-dorado-oscuro);    
+  animation: brillo 2s ease-in-out infinite alternate;
+}
+
+@keyframes brillo {
+  from {
+    text-shadow: 
+      0 0 3px #fff,
+      0 0 4px #fff,
+      0 0 10px #ffcc00,
+      0 0 14px #ffcc00;
+  }
+}
+/* CONTENEDOR PADRE */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0;
+  padding: 50px;
+  justify-content: space-between;
+}
+/* CONTENEDOR ROSARIO */
+h6{
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: var(--font-grosor);
+  color: var(--color-texto);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--font-background);
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  margin: 10px;
+}
+hr{
+  width: 100%;
+  margin: auto;
+  color:var(--color-texto);
+}
+.container1 {
+  background-color: var(--color-cards);
+  width: 30%;
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.container-boton {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}

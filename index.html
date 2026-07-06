@@ -1,14 +1,544 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pagina de mundial">
-    <link rel="stylesheet" href="./css/style.css">
-    
-    <title>Document</title>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="pagina de mundial">
+  <meta name="keywords" content="mundial 2026, album mundial, mvp, messi">
+  <meta name="author" content="rosario ojeda, alejandro fourmantin, lucio llanos">
+  <link rel="shortcut icon" href="./contenido/imagenes/logo.favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>MVPmundial</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg navegadorpadre p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./contenido/imagenes/LOGO.png" alt="logo"
+                        class="logomundial"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold mx-2" href="./index.html">HOGAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold mx-2" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold mx-2" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold mx-2" href="./pages/login.html">ACCESO</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+      <section class="container1">
+        <h6>PARTIDO SUDÁFRICA VS CANADÁ</h6>
+        <div class="container-puntaje">
+          <div class="bandera">
+            <img
+              src="./contenido/imagenes/BanderaSudafrica.png"
+              alt="icono bandera argentina"
+            />
+            <p>Sudáfrica</p>
+          </div>
+          <div class="puntaje">
+            <span class="puntaje-numero">0</span>
+            <span class="puntaje-separador">-</span>
+            <span class="puntaje-numero">1</span>
+          </div>
+          <div class="bandera">
+            <img
+              src="./contenido/imagenes/BanderaCanada.png"
+              alt="icono bandera canada"
+            />
+            <p>Canadá</p>
+          </div>
+        </div>
+        <div class="container-info">
+          <article class="dato1">
+            <div class="icono">
+              <img
+                src="./contenido/imagenes/IconoFecha.png"
+                alt="icono fecha"
+              />
+            </div>
+            <div class="info">
+              <span class="infoTitulo">Fecha</span>
+              <span class="infoValor">28/06/2026</span>
+            </div>
+          </article>
+          <hr>
+          <article class="dato1">
+            <div class="icono">
+              <img
+                src="./contenido/imagenes/IconoTrofeo.png"
+                alt="icono trofeo"
+              />
+            </div>
+            <div class="info">
+              <span class="infoTitulo">Fase</span>
+              <span class="infoValor">16vos Copa Mundial Fifa 2026</span>
+            </div>
+          </article>
+          <hr>
+          <article class="dato1">
+            <div class="icono">
+              <img
+                src="./contenido/imagenes/iconoEstadio.png"
+                alt="icono estadio"
+              />
+            </div>
+            <div class="info">
+              <span class="infoTitulo">Estadio</span>
+              <span class="infoValor">Los Angeles</span>
+            </div>
+          </article>
+          <hr>
+          <article class="dato1">
+            <div class="icono">
+              <img
+                src="./contenido/imagenes/IconoUbi.png"
+                alt="icono ubicacion"
+              />
+            </div>
+            <div class="info">
+              <span class="infoTitulo">Ciudad</span>
+              <span class="infoValor">Inglewood, California.</span>
+            </div>
+          </article>
+          <hr>
+          <article class="dato1">
+            <div class="icono">
+              <img
+                src="./contenido/imagenes/IconoArbitro.png"
+                alt="icono arbitro"
+              />
+            </div>
+            <div class="info">
+              <span class="infoTitulo">Árbitro</span>
+              <span class="infoValor">João Pinheiro (Portugal)</span>
+            </div>
+          </article>
+          <hr>
+          <article class="dato1">
+            <div class="icono">
+              <img
+                src="./contenido/imagenes/IconoPersonas.png"
+                alt="icono personas"
+              />
+            </div>
+            <div class="info">
+              <span class="infoTitulo">Asistencia</span>
+              <span class="infoValor">69.237 espectadores</span>
+            </div>
+          </article>
+          <hr>
+        </div>
+        <div class="container-boton">
+            <button
+              class="btn btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#estadisticas"
+              aria-expanded="false"
+              aria-controls="estadisticas"
+            >
+              VER ESTADÍSTICAS
+            </button>
+            <div class="collapse collapse-horizontal" id="estadisticas">
+              <div class="card card-body" style="width: 300px">
+                <h6>ESTADÍSTICAS</h6>
+                <div class="estadisticasNombre">
+                  <P>Sudáfrica</P>
+                  <P>Canadá</P>
+                </div>
+                <article>
+                  <div class="fila">
+                    <p>58%</p>
+                    <p>Posesión</p>
+                    <p>42%</p>
+                  </div>
+                  <div class="barra">
+                    <div class="verde1"></div>
+                    <div class="azul1"></div>
+                  </div>
+                </article>
+                <article>
+                  <div class="fila">
+                    <p>12</p>
+                    <p>Tiros</p>
+                    <p>6</p>
+                  </div>
+                  <div class="barra">
+                    <div class="verde2"></div>
+                    <div class="azul2"></div>
+                  </div>
+                </article>
+                <article>
+                  <div class="fila">
+                    <p>7</p>
+                    <p>Tiros al arco</p>
+                    <p>1</p>
+                  </div>
+                  <div class="barra">
+                    <div class="verde3"></div>
+                    <div class="azul3"></div>
+                  </div>
+                </article>
+                <article>
+                  <div class="fila">
+                    <p>0</p>
+                    <p>Tarjetas Amarillas</p>
+                    <p>2</p>
+                  </div>
+                  <div class="barra">
+                    <div class="verde4"></div>
+                    <div class="azul4"></div>
+                  </div>
+                </article>
+                <article>
+                  <div class="fila">
+                    <p>0</p>
+                    <p>Tarjetas Rojas</p>
+                    <p>0</p>
+                  </div>
+                  <div class="barra">
+                    <div class="verde5"></div>
+                    <div class="azul5"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="container2">
+      <H3 class="nombres">EQUIPO 1</H3>
+        <section class="equipos">
+        <div class="container-padre">
+          <div class="carousel1">
+            <div id="carousel1" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA7.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA8.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h3 class="nombres">EQUIPO 2</h3>
+      <section class="equipos">
+        <div class="container-padre">
+          <div class="carousel1">
+            <div id="carousel2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item canada">
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA7.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA8.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+          <H3 class="nombres">MVP DEL PARTIDO</H3>
+        <section class="equipos">
+        <div class="container-padre">
+          <div class="carousel1">
+            <div id="carousel3" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item canada">
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA7.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA8.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <img
+                    class="figu"
+                    src="./contenido/imagenes/CANADA9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      </section>
+    </main>
+    <footer class="pt-4 pb-3 bg-footer text-white">
+        <div class="container-footer text-center">
+            <ul class="nav justify-content-center mb-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="./index.html">HOGAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-semibold" href="./pages/login.html">ACCESO</a>
+                </li>
+            </ul>
+           <hr class="w-50 mx-auto mb-3 separador-footer">
+            <p class="mb-0 small texto-copyright">
+                &copy; 2026 MVP Mundial. Todos los derechos reservados.
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
+  
