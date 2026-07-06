@@ -174,6 +174,7 @@ hr{
   object-fit: contain;
    transition: transform 0.3s ease;
     cursor: pointer; 
+    filter: brightness(65%);
 }
 .figu:hover {
    transform: scale(1.1); 
