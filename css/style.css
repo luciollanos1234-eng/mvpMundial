@@ -24,6 +24,7 @@
 main {
   background-image: url(../contenido/imagenes/Estadio.jpg);
   background-size: cover;
+  filter: brightness(55%);
 }
 .figu {
   object-fit: cover;
@@ -103,7 +104,7 @@ main {
   justify-content: end;
 }
 .container-padre {
-  margin: 50px;
+  margin: 10px;
   background-color:var(--color-primary);
   padding: 15px;
   width: 810px;
@@ -119,15 +120,27 @@ main {
   object-fit: contain;
    transition: transform 0.3s ease;
     cursor: pointer; 
-    filter: brightness(65%);
 }
 .figu:hover {
    transform: scale(1.1); 
 }
 .nombres {
-  color: var(--color-dorado-oscuro) ;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  margin-left: 490px;
+  padding: 30px;
+  margin-left: 500px;
+   font-size: 2rem;
+  font-size: 2rem;       
+  color: var(--color-dorado-oscuro);    
+  animation: brillo 2s ease-in-out infinite alternate;
+}
+
+@keyframes brillo {
+  from {
+    text-shadow: 
+      0 0 3px #fff,
+      0 0 4px #fff,
+      0 0 10px #ffcc00,
+      0 0 14px #ffcc00;
+  }
 }
