@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+    /* colores */
+    --color-primary: #021031;
+    --color-secondary: #3a954a;
+    --color-danger: #d33b45;
+    --color-texto: white;
+    --color-subtitulos: #ebebeb;
+
+    /* estilos para titulos */
+    --font-family: "Montserrat", sans-serif;
+    --font-size: 17px;
+    --font-grosor: 600;
+
+    /* ---------- */
+
+    /* borde cards y botones: */
+    --border-radius: 1rem;
+    --border-none: 0;
+
+    /* animaciones */;
+}
 .figu {
   object-fit: cover;
   display: flex;
