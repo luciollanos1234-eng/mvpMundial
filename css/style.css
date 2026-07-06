@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 :root {
+  /* colores */
+  --color-primary: #021031;
+  --color-secondary: #3a954a;
+  --color-danger: #d33b45;
+  --color-texto: white;
+  --color-subtitulos: #ebebeb;
+  --color-cards: #021031b6;
     /* colores */
     --color-primary: #021031;
     --color-secondary: #3a954a;
@@ -8,18 +15,19 @@
     --color-subtitulos: #ebebeb;
     --color-dorado-oscuro: #D4AF37;
 
-    /* estilos para titulos */
-    --font-family: "Montserrat", sans-serif;
-    --font-size: 17px;
-    --font-grosor: 600;
+  /* estilos para titulos */
+  --font-family: "Montserrat", sans-serif;
+  --font-size: 17px;
+  --font-grosor: 600;
+  --font-background:#09ff008a;
 
-    /* ---------- */
+  /* ---------- */
 
-    /* borde cards y botones: */
-    --border-radius: 1rem;
-    --border-none: 0;
+  /* bordes */
+  --border-radius: 1rem;
+  --border-none: 0;
 
-    /* animaciones */;
+  /* animaciones */
 }
 main {
   background-image: url(../contenido/imagenes/Estadio.jpg);
@@ -105,7 +113,7 @@ main {
 }
 .container-padre {
   margin: 10px;
-  background-color:var(--color-primary);
+  background-color:var(--color-cards);
   padding: 15px;
   width: 810px;
   height: 155px;
@@ -128,7 +136,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 30px;
-  margin-left: 500px;
+ /*  margin-left: 500px; */
    font-size: 2rem;
   font-size: 2rem;       
   color: var(--color-dorado-oscuro);    
@@ -143,4 +151,47 @@ main {
       0 0 10px #ffcc00,
       0 0 14px #ffcc00;
   }
+}
+/* CONTENEDOR PADRE */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0;
+  padding: 50px;
+  justify-content: space-between;
+}
+/* CONTENEDOR ROSARIO */
+h6{
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: var(--font-grosor);
+  color: var(--color-texto);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--font-background);
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  margin: 10px;
+}
+hr{
+  width: 100%;
+  margin: auto;
+  color:var(--color-texto);
+}
+.container1 {
+  background-color: var(--color-cards);
+  width: 30%;
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.container-boton {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
