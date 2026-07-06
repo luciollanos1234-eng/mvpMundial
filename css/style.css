@@ -17,10 +17,11 @@
   --font-family: "Montserrat", sans-serif;
   --font-size: 17px;
   --font-grosor: 600;
+  --font-background:#09ff008a;
 
   /* ---------- */
 
-  /* borde cards y botones: */
+  /* bordes */
   --border-radius: 1rem;
   --border-none: 0;
 
@@ -115,6 +116,19 @@ main {
   padding: 50px;
 }
 /* CONTENEDOR ROSARIO */
+h6{
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: var(--font-grosor);
+  color: var(--color-texto);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--font-background);
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  margin: 10px;
+}
 .container1 {
   background-color: var(--color-cards);
   width: 30%;
@@ -123,6 +137,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 .container-boton {
   display: flex;
