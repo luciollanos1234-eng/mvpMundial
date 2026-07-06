@@ -121,10 +121,8 @@ main{
   border-radius: var(--border-radius);
   border: var(--border-none);
   display: flex;
-
-}
-.container-padre2{
-  color: var(--color-texto);
+  flex-direction: column;
+  align-items: center;
 }
 .container2 {
   width: 60%;
