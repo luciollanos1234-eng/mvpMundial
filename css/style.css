@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -100,14 +100,11 @@
   width: auto;
 }
 /* MAIN */
-main{
+main {
   background-image: url(../contenido/imagenes/Estadio.jpg);
   background-size: cover;
 }
-.equipos {
-  display: flex;
-  justify-content: row;
-}
+/* CONTENEDOR PADRE */
 .container {
   display: flex;
   flex-direction: row;
@@ -115,6 +112,7 @@ main{
   margin: 0;
   padding: 50px;
 }
+/* CONTENEDOR ROSARIO */
 .container1 {
   background-color: var(--color-cards);
   width: 30%;
@@ -124,13 +122,18 @@ main{
   flex-direction: column;
   align-items: center;
 }
-.container2 {
-  width: 60%;
-}
-.container-boton{
+.container-boton {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+}
+/* CONTENEDOR LUCIO */
+.container2 {
+  width: 60%;
+}
+.equipos {
+  display: flex;
+  justify-content: row;
 }
 .container-padre {
   margin: 50px;
