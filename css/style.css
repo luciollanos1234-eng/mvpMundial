@@ -6,6 +6,7 @@
     --color-danger: #d33b45;
     --color-texto: white;
     --color-subtitulos: #ebebeb;
+    --color-dorado-oscuro: #D4AF37;
 
     /* estilos para titulos */
     --font-family: "Montserrat", sans-serif;
@@ -99,7 +100,7 @@
 }
 .container-padre {
   margin: 50px;
-  background-color: var(--color-primary);
+  background-color:var(--color-primary);
   padding: 15px;
   width: 810px;
   height: 155px;
@@ -112,4 +113,16 @@
   height: 110px;
   margin: 5px;
   object-fit: contain;
+   transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+.figu:hover {
+   transform: scale(1.1); 
+}
+.nombres {
+  color: var(--color-dorado-oscuro) ;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 490px;
 }
