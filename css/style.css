@@ -21,6 +21,10 @@
 
     /* animaciones */;
 }
+main {
+  background-image: url(../contenido/imagenes/Estadio.jpg);
+  background-size: cover;
+}
 .figu {
   object-fit: cover;
   display: flex;
