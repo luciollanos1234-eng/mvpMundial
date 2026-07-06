@@ -1,28 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+    /* colores */
+    --color-primary: #021031;
+    --color-secondary: #3a954a;
+    --color-danger: #d33b45;
+    --color-texto: white;
+    --color-subtitulos: #ebebeb;
+
+    /* estilos para titulos */
+    --font-family: "Montserrat", sans-serif;
+    --font-size: 17px;
+    --font-grosor: 600;
+
+    /* ---------- */
+
+    /* borde cards y botones: */
+    --border-radius: 1rem;
+    --border-none: 0;
+
+    /* animaciones */;
+}
 .figu {
   object-fit: cover;
   display: flex;
   display: inline-block;
   margin: 20px;
   justify-content: center;
-  justify-content: space-around;  
-  }
+  justify-content: space-around;
+}
 .navegadorpadre {
   font-family: var(--font-family);
   font-size: 17px;
   background-color: var(--color-primary);
 }
 .logomundial {
-    height: 120px;
-    height: 150px;
-    width: auto;
+  height: 120px;
+  height: 150px;
+  width: auto;
 }
 .nav-link {
   transition: transform 0.2s;
   display: inline-block;
 }
-.nav-link:hover{
-    transform: scale(1.1); 
+.nav-link:hover {
+  transform: scale(1.1);
 }
 .titulo-login {
   color: var(--color-primary);
@@ -62,9 +83,10 @@
   border-top: 1px solid var(--color-subtitulos);
 }
 .texto-copyright {
-    color: rgba(255, 255, 255, 0.7);
-.navegadorpadre{
-  font-family:"Montserrat",sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+.navegadorpadre {
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
 }
 .logomundial {
@@ -77,7 +99,7 @@
 }
 .container-padre {
   margin: 50px;
-  background-color:var(--color-primary);
+  background-color: var(--color-primary);
   padding: 15px;
   width: 810px;
   height: 155px;
@@ -91,4 +113,3 @@
   margin: 5px;
   object-fit: contain;
 }
-
