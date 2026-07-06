@@ -1,24 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
-    /* colores */
-    --color-primary: #021031;
-    --color-secondary: #3a954a;
-    --color-danger: #d33b45;
-    --color-texto: white;
-    --color-subtitulos: #ebebeb;
+  /* colores */
+  --color-primary: #021031;
+  --color-secondary: #3a954a;
+  --color-danger: #d33b45;
+  --color-texto: white;
+  --color-subtitulos: #ebebeb;
+  --color-cards: #021031b6;
 
-    /* estilos para titulos */
-    --font-family: "Montserrat", sans-serif;
-    --font-size: 17px;
-    --font-grosor: 600;
+  /* estilos para titulos */
+  --font-family: "Montserrat", sans-serif;
+  --font-size: 17px;
+  --font-grosor: 600;
 
-    /* ---------- */
+  /* ---------- */
 
-    /* borde cards y botones: */
-    --border-radius: 1rem;
-    --border-none: 0;
+  /* borde cards y botones: */
+  --border-radius: 1rem;
+  --border-none: 0;
 
-    /* animaciones */;
+  /* animaciones */
 }
 .figu {
   object-fit: cover;
@@ -94,13 +100,39 @@
   width: auto;
 }
 /* MAIN */
+main{
+  background-image: url(../contenido/imagenes/Estadio.jpg);
+  background-size: cover;
+}
 .equipos {
   display: flex;
   justify-content: row;
 }
-.container{
-    display: flex;
-    flex-direction: row;
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0;
+  padding: 50px;
+}
+.container1 {
+  background-color: var(--color-cards);
+  width: 30%;
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  display: flex;
+
+}
+.container-padre2{
+  color: var(--color-texto);
+}
+.container2 {
+  width: 60%;
+}
+.container-boton{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 .container-padre {
   margin: 50px;
