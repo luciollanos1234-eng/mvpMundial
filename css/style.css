@@ -132,11 +132,17 @@ main {
 .nombres {
   display: flex;
   justify-content: center;
-  padding: 30px;
-  /*  margin-left: 500px; */
-  font-size: 2rem;
-  font-size: 2rem;
-  color: var(--color-dorado-oscuro);
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: var(--font-grosor);
+  color: var(--color-texto);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--font-background);
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  margin: 10px;
   animation: brillo 2s ease-in-out infinite alternate;
 }
 
@@ -249,7 +255,7 @@ hr {
   align-items: flex-start;
   gap: 10px;
 }
-.btn {
+.boton{
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: var(--font-grosor);
@@ -261,9 +267,11 @@ hr {
   border-radius: var(--border-radius);
   border: var(--border-none);
   margin: 10px;
+  animation: brillo 2s ease-in-out infinite alternate;
 }
-:hover.btn{
-  transition: transform 0.2s;
+:hover.boton {
+  transition: 0.2s;
+  transform: scale(1.1);
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
