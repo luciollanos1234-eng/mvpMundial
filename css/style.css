@@ -24,7 +24,7 @@
   --font-family: "Montserrat", sans-serif;
   --font-size: 17px;
   --font-grosor: 600;
-  --font-background:#09ff008a;
+  --font-background: #09ff008a;
 
   /* ---------- */
 
@@ -120,7 +120,7 @@ main {
   padding: 50px;
 }
 /* CONTENEDOR ROSARIO */
-h6{
+h6 {
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: var(--font-grosor);
@@ -132,11 +132,16 @@ h6{
   border-radius: var(--border-radius);
   border: var(--border-none);
   margin: 10px;
+  text-align: center;
+  width: 100%;
 }
-hr{
+.estadisticasNombre{
+  font-weight: 500;
+}
+hr {
   width: 100%;
   margin: auto;
-  color:var(--color-texto);
+  color: var(--color-texto);
 }
 .container1 {
   background-color: var(--color-cards);
@@ -153,7 +158,7 @@ hr{
   align-items: flex-start;
   gap: 10px;
 }
-.fila{
+.fila {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -320,7 +325,7 @@ hr {
   align-items: flex-start;
   gap: 10px;
 }
-.boton{
+.boton {
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: var(--font-grosor);
