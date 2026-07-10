@@ -153,6 +153,12 @@ hr{
   align-items: flex-start;
   gap: 10px;
 }
+.fila{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /* CONTENEDOR LUCIO */
 .container2 {
   width: 60%;
