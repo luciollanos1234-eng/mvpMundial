@@ -394,9 +394,18 @@ hr {
   color: var(--color-texto);
 }
 .container-boton {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 10px;
+}
+#estadisticas{
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin-top: 10PX;
 }
 .boton {
   font-family: var(--font-family);
@@ -427,6 +436,7 @@ hr {
 .card-body {
   display: flex;
   flex-direction: column;
+  background-color: rgb(199, 199, 199);
 }
 .estadisticasNombre {
   width: 100%;
