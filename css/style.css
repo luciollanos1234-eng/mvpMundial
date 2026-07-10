@@ -365,3 +365,16 @@ span {
   border-radius: var(--border-radius);
   padding: 10px;
 }
+
+body {
+    background-image: url('../contenido/imagenes/estadio.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(100%)
+}
