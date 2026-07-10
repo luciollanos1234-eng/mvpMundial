@@ -196,6 +196,20 @@ h6 {
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
+.verde3{
+  background-color: var(--color-secondary);
+  width: 88%;
+  height: 10px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.azul3{
+  background-color: var(--color-primary);
+  width: 12%;
+  height: 10px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
 
 /* CONTENEDOR LUCIO */
 .container2 {
