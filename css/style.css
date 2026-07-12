@@ -24,7 +24,7 @@
   --font-family: "Montserrat", sans-serif;
   --font-size: 17px;
   --font-grosor: 600;
-  --font-background:#09ff008a;
+  --font-background: #09ff008a;
 
   /* ---------- */
 
@@ -120,23 +120,10 @@ main {
   padding: 50px;
 }
 /* CONTENEDOR ROSARIO */
-h6{
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  margin: 10px;
-}
-hr{
+hr {
   width: 100%;
   margin: auto;
-  color:var(--color-texto);
+  color: var(--color-texto);
 }
 .container1 {
   background-color: var(--color-cards);
@@ -152,6 +139,103 @@ hr{
   display: flex;
   align-items: flex-start;
   gap: 10px;
+}
+h6 {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: var(--font-grosor);
+  color: var(--color-texto);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--font-background);
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+}
+.estadisticasNombre{
+  font-weight: 500;
+}
+.fila {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.barra{
+  display: flex;
+  flex-direction: row;
+}
+.verde1{
+  background-color: var(--color-secondary);
+  width: 58%;
+  height: 10px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.azul1{
+  background-color: var(--color-primary);
+  width: 42%;
+  height: 10px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.verde2{
+  background-color: var(--color-secondary);
+  width: 67%;
+  height: 10px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.azul2{
+  background-color: var(--color-primary);
+  width: 33%;
+  height: 10px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.verde3{
+  background-color: var(--color-secondary);
+  width: 88%;
+  height: 10px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.azul3{
+  background-color: var(--color-primary);
+  width: 12%;
+  height: 10px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.verde4{
+  background-color: var(--color-secondary);
+  width: 0%;
+  height: 10px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.azul4{
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 10px;
+  border-radius: var(--border-radius);
+}
+.verde5{
+  background-color: var(--color-subtitulos);
+  width: 50%;
+  height: 10px;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.azul5{
+  background-color: var(--color-subtitulos);
+  width: 50%;
+  height: 10px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 /* CONTENEDOR LUCIO */
 .container2 {
@@ -310,11 +394,20 @@ hr {
   color: var(--color-texto);
 }
 .container-boton {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
-.boton{
+#estadisticas{
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin-top: 10PX;
+}
+.boton {
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: var(--font-grosor);
@@ -343,6 +436,7 @@ hr {
 .card-body {
   display: flex;
   flex-direction: column;
+  background-color: rgb(199, 199, 199);
 }
 .estadisticasNombre {
   width: 100%;
