@@ -238,9 +238,6 @@ h6 {
   border-bottom-right-radius: var(--border-radius);
 }
 /* CONTENEDOR LUCIO */
-.container2 {
-  width: 60%;
-}
 .equipos {
   display: flex;
   justify-content: row;
@@ -249,7 +246,7 @@ h6 {
   margin: 10px;
   background-color: var(--color-cards);
   padding: 15px;
-  width: 810px;
+  width: 900px;
   height: 155px;
   display: flex;
   justify-content: center;
@@ -328,7 +325,7 @@ hr {
 }
 .container1 {
   background-color: var(--color-cards);
-  width: 40%;
+  width: 400px;
   border-radius: var(--border-radius);
   border: var(--border-none);
   display: flex;
