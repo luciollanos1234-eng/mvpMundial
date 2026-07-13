@@ -238,9 +238,6 @@ h6 {
   border-bottom-right-radius: var(--border-radius);
 }
 /* CONTENEDOR LUCIO */
-.container2 {
-  width: 60%;
-}
 .equipos {
   display: flex;
   justify-content: row;
@@ -249,7 +246,7 @@ h6 {
   margin: 10px;
   background-color: var(--color-cards);
   padding: 15px;
-  width: 810px;
+  width: 900px;
   height: 155px;
   display: flex;
   justify-content: center;
@@ -328,7 +325,7 @@ hr {
 }
 .container1 {
   background-color: var(--color-cards);
-  width: 40%;
+  width: 400px;
   border-radius: var(--border-radius);
   border: var(--border-none);
   display: flex;
@@ -463,4 +460,80 @@ span {
 
 .navbar-toggler-icon {
     filter: invert(1) brightness(100%)
+}
+
+/* prode2 */
+.titulo-prode {
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: var(--font-grosor);
+  color: var(--color-texto);
+  background-color: var(--font-background);
+  border-radius: var(--border-radius);
+  border: var(--border-none);
+   animation: brillo 2s ease-in-out infinite alternate;
+   padding: 10px;
+}
+.container-prode {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.equipos-prode {
+  width: 50%;
+  height: 50%;
+  display: block;
+}
+.carousel-prode {
+  width: 300px;
+  height: 50%;
+  display: block;
+}
+.prode2 {
+  padding: 50px;
+}
+.espacios {
+  height: 10px;
+}
+
+.bg-prode {
+  background-color: var(--color-cards);
+  border-radius: var(--border-radius);
+}
+h1 {
+  text-align: center;
+  color: #0a3d62;
+  margin-bottom: 30px;
+}
+
+/* Estilo para cada partido */
+.partido {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.equipo {
+  width: 35%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vs {
+  font-weight: bold;
+  color: #555;
+}
+
+.goles {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
