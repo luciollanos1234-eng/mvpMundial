@@ -37,7 +37,6 @@
 main {
   background-image: url(../contenido/imagenes/Estadio.jpg);
   background-size: cover;
-  filter: brightness(55%);
 }
 .navegadorpadre {
   font-family: var(--font-family);
@@ -458,4 +457,9 @@ span {
   background-color: rgb(248, 242, 242);
   border-radius: var(--border-radius);
   padding: 10px;
+}
+@media (max-width: 768px) {
+main .container {
+flex-direction: column;
+}
 }
