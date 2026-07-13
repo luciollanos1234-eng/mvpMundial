@@ -1,601 +1,406 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+/* ==========================
+RESET
+========================== */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
+/* ==========================
+VARIABLES
+========================== */
+
 :root {
-  /* colores */
-  --color-primary: #021031;
-  --color-secondary: #3a954a;
-  --color-danger: #d33b45;
-  --color-texto: white;
-  --color-subtitulos: #ebebeb;
-  --color-cards: #021031b6;
-  /* colores */
-  --color-nav: #021031cb;
-  --color-secondary: #3a954a;
-  --color-danger: #d33b45;
-  --color-texto: white;
-  --color-subtitulos: #ebebeb;
-  --color-dorado-oscuro: #d4af37;
+/* Colores */
+--color-primary: #021031;
+--color-secondary: #3a954a;
+--color-danger: #d33b45;
+--color-texto: #ffffff;
+--color-subtitulos: #ebebeb;
+--color-cards: #021031b6;
+--color-nav: #021031cb;
+--color-dorado-oscuro: #d4af37;
 
-  /* estilos para titulos */
-  --font-family: "Montserrat", sans-serif;
-  --font-size: 17px;
-  --font-grosor: 600;
-  --font-background: #09ff008a;
+/* Tipografía */
+--font-family: "Montserrat", sans-serif;
+--font-size: 17px;
+--font-grosor: 600;
+--font-background: #09ff008a;
 
-  /* ---------- */
-
-  /* bordes */
-  --border-radius: 1rem;
-  --border-none: 0;
-
-  /* animaciones */
+/* Bordes */
+--border-radius: 1rem;
+--border-none: 0;
 }
+
+/* ==========================
+ESTILOS GENERALES
+========================== */
+
 main {
-  background-image: url(../contenido/imagenes/Estadio.jpg);
-  background-size: cover;
+background-image: url(../contenido/imagenes/Estadio.jpg);
+background-size: cover;
+display: flex;
+justify-content: center;
 }
-.navegadorpadre {
-  font-family: var(--font-family);
-  font-size: 17px;
-  background-color: var(--color-primary);
-}
-.logomundial {
-  height: 120px;
-  height: 150px;
-  width: auto;
-}
-.nav-link {
-  transition: transform 0.2s;
-  display: inline-block;
-}
-.nav-link:hover {
-  transform: scale(1.1);
-}
-.titulo-login {
-  color: var(--color-primary);
-}
-.btn-login {
-  background-color: var(--color-primary);
-  font-size: 1.1rem;
-}
-.btn-login:hover {
-  background-color: var(--color-primary);
-  color: #ffffff;
-}
-.textoh2 {
-  color: var(--color-primary);
-}
-.titulo-contacto {
-  color: var(--color-primary);
-}
-.btn-contacto {
-  background-color: var(--color-primary);
-  font-size: 1.1rem;
-}
-.btn-contacto:hover {
-  background-color: var(--color-primary);
-  color: #ffffff;
-}
-.titulo-nosotros {
-  color: var(--color-primary);
-}
-.subtitulo-nosotros {
-  color: var(--color-primary);
-}
-.bg-footer {
-  background-color: var(--color-primary);
-}
-.separador-footer {
-  border-top: 1px solid var(--color-subtitulos);
-}
-.texto-copyright {
-  color: rgba(255, 255, 255, 0.7);
-}
-.navegadorpadre {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-}
-.logomundial {
-  height: 120px;
-  width: auto;
-}
-/* MAIN */
-main {
-  background-image: url(../contenido/imagenes/Estadio.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
-/* CONTENEDOR PADRE */
-.container {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  margin: 0;
-  padding: 50px;
-}
-/* CONTENEDOR ROSARIO */
+
 hr {
-  width: 100%;
-  margin: auto;
-  color: var(--color-texto);
+width: 100%;
+margin: auto;
+color: var(--color-texto);
 }
+
+span {
+color: var(--color-texto);
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navegadorpadre {
+font-family: var(--font-family);
+font-size: var(--font-size);
+background-color: var(--color-primary);
+}
+
+.logomundial {
+height: 120px;
+width: auto;
+}
+
+.nav-link {
+display: inline-block;
+transition: transform 0.2s;
+}
+
+.nav-link:hover {
+transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+filter: invert(1) brightness(100%);
+}
+/* ==========================
+CONTENEDOR PRINCIPAL
+========================== */
+
+.container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+margin: 0;
+padding: 50px;
+}
+
+/* ==========================
+TARJETA DEL PARTIDO
+========================== */
+
 .container1 {
-  background-color: var(--color-cards);
-  width: 30%;
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+width: 400px;
+padding: 10px;
+background-color: var(--color-cards);
+border: var(--border-none);
+border-radius: var(--border-radius);
+display: flex;
+flex-direction: column;
+align-items: center;
 }
+
+.container-puntaje {
+width: 100%;
+display: flex;
+flex-direction: row;
+padding: 10px 20px;
+color: var(--color-texto);
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-grosor);
+}
+
+.bandera {
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: center;
+color: var(--color-texto);
+}
+
+.puntaje {
+width: 40%;
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+font-family: var(--font-family);
+font-size: 50px;
+font-weight: var(--font-grosor);
+color: var(--color-texto);
+padding: 10px;
+}
+
+.container-info {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.dato1 {
+display: flex;
+width: 100%;
+}
+
+.info {
+display: flex;
+flex-direction: column;
+margin-left: 30px;
+}
+
+.infoTitulo,
+.infoValor {
+color: var(--color-texto);
+}
+
+/* ==========================
+BOTONES
+========================== */
+
 .container-boton {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+position: relative;
+display: flex;
+align-items: flex-start;
+gap: 10px;
+padding-top: 10px;
 }
+
+.boton,
 h6 {
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  margin: 10px;
-  text-align: center;
-  width: 100%;
+padding: 10px 20px;
+margin: 10px;
+border: var(--border-none);
+border-radius: var(--border-radius);
+background-color: var(--font-background);
+color: var(--color-texto);
+font-family: var(--font-family);
+font-size: 12px;
+font-weight: var(--font-grosor);
+text-align: center;
+animation: brillo 2s ease-in-out infinite alternate;
 }
-.estadisticasNombre {
-  font-weight: 500;
+
+.boton:hover {
+transform: scale(1.1);
+transition: 0.2s;
+color: var(--color-texto);
 }
+
+#estadisticas {
+position: absolute;
+bottom: 60px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1000;
+}
+
+/* ==========================
+ESTADÍSTICAS
+========================== */
+
+.card-body {
+display: flex;
+flex-direction: column;
+background-color: rgb(199, 199, 199);
+}
+
+.estadisticasNombre,
 .fila {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+width: 100%;
+display: flex;
+justify-content: space-between;
 }
+
 .barra {
-  display: flex;
-  flex-direction: row;
+display: flex;
 }
-.verde1 {
-  background-color: var(--color-secondary);
-  width: 58%;
-  height: 10px;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-.azul1 {
-  background-color: var(--color-primary);
-  width: 42%;
-  height: 10px;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-.verde2 {
-  background-color: var(--color-secondary);
-  width: 67%;
-  height: 10px;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-.azul2 {
-  background-color: var(--color-primary);
-  width: 33%;
-  height: 10px;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-.verde3 {
-  background-color: var(--color-secondary);
-  width: 88%;
-  height: 10px;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-.azul3 {
-  background-color: var(--color-primary);
-  width: 12%;
-  height: 10px;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-.verde4 {
-  background-color: var(--color-secondary);
-  width: 0%;
-  height: 10px;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-.azul4 {
-  background-color: var(--color-primary);
-  width: 100%;
-  height: 10px;
-  border-radius: var(--border-radius);
-}
-.verde5 {
-  background-color: var(--color-subtitulos);
-  width: 50%;
-  height: 10px;
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-.azul5 {
-  background-color: var(--color-subtitulos);
-  width: 50%;
-  height: 10px;
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-/* CONTENEDOR LUCIO */
+/* ==========================
+FIGURITAS Y CARRUSEL
+========================== */
+
 .equipos {
-  display: flex;
-  justify-content: row;
+display: flex;
 }
-.container-padre {
-  margin: 10px;
-  background-color: var(--color-cards);
-  padding: 15px;
-  width: 900px;
-  height: 155px;
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-}
-.figu {
-  object-fit: cover;
-  display: flex;
-  display: inline-block;
-  margin: 20px;
-  justify-content: center;
-  justify-content: space-around;
-  width: 105px;
-  height: 110px;
-  margin: 5px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-.figu:hover {
-  transform: scale(1.1);
-}
+
+.container-padre,
 .mvp {
-  display: flex;
-  justify-content: center;
-   margin: 10px;
-  background-color: var(--color-cards);
-  padding: 15px;
-  width: 900px;
-  height: 155px;
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
+margin: 10px;
+width: 900px;
+height: 155px;
+padding: 15px;
+background-color: var(--color-cards);
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
+.figu {
+width: 105px;
+height: 110px;
+margin: 5px;
+object-fit: contain;
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+
+.figu:hover {
+transform: scale(1.1);
+}
+
 .nombres {
-  display: flex;
-  justify-content: center;
-  font-family: var(--font-family);
-  font-size: 13px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  margin: 10px;
-  animation: brillo 2s ease-in-out infinite alternate;
+display: flex;
+justify-content: center;
+margin: 10px;
+padding: 10px 20px;
+border: none;
+border-radius: var(--border-radius);
+background-color: var(--font-background);
+color: var(--color-texto);
+font-family: var(--font-family);
+font-size: 13px;
+font-weight: var(--font-grosor);
+animation: brillo 2s ease-in-out infinite alternate;
 }
 
 @keyframes brillo {
-  from {
-    text-shadow:
-      0 0 3px #fff,
-      0 0 4px #fff,
-      0 0 10px #ffcc00,
-      0 0 14px #ffcc00;
-  }
+from {
+text-shadow:
+0 0 3px #fff,
+0 0 4px #fff,
+0 0 10px #ffcc00,
+0 0 14px #ffcc00;
 }
-/* CONTENEDOR PADRE */
-.container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0;
-  padding: 50px;
-  justify-content: center;
-  
-}
-@media (max-width: 767px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-  .container-padre {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
- 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-   .container-padre {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-/* CONTENEDOR ROSARIO */
-h6 {
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  margin: 10px;
-}
-hr {
-  width: 100%;
-  margin: auto;
-  color: var(--color-texto);
-}
-.container1 {
-  background-color: var(--color-cards);
-  width: 400px;
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-.container-puntaje {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.bandera {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--color-texto);
-}
-.puntaje {
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: start;
-  color: var(--color-texto);
-  font-family: var(--font-family);
-  font-size: 50px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-}
-.container-info {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.dato1 {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-}
-.infoTitulo {
-  color: var(--color-texto);
-}
-.infoValor {
-  color: var(--color-texto);
-}
-.container-boton {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-#estadisticas {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  margin-top: 10px;
-}
-.boton {
-  font-family: var(--font-family);
-  font-size: 12px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  margin: 10px;
-  animation: brillo 2s ease-in-out infinite alternate;
-}
-:hover.boton {
-  transition: 0.2s;
-  transform: scale(1.1);
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-  margin: 10px;
-  color: var(--color-texto);
-}
-.card-body {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(199, 199, 199);
-}
-.estadisticasNombre {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-}
-.fila {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-span {
-  color: var(--color-texto);
-}
+/* ==========================
+PRODE
+========================== */
 
-.container-nosotros {
-  background-color: rgb(248, 242, 242);
-  border-radius: var(--border-radius);
-  padding: 10px;
-}
-.navbar-toggler-icon {
-    filter: invert(1) brightness(100%)
-}
-
-/* prode2 */
-.titulo-prode {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: var(--font-grosor);
-  color: var(--color-texto);
-  background-color: var(--font-background);
-  border-radius: var(--border-radius);
-  border: var(--border-none);
-   animation: brillo 2s ease-in-out infinite alternate;
-   padding: 10px;
-}
-.container-prode {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.equipos-prode {
-  width: 50%;
-  height: 50%;
-  display: block;
-}
-.carousel-prode {
-  width: 300px;
-  height: 50%;
-  display: block;
-}
 .prode2 {
-  padding: 50px;
+padding: 50px;
 }
+
+.titulo-prode {
+padding: 10px;
+border-radius: var(--border-radius);
+background-color: var(--font-background);
+color: var(--color-texto);
+font-family: var(--font-family);
+font-size: 30px;
+font-weight: var(--font-grosor);
+animation: brillo 2s ease-in-out infinite alternate;
+}
+
+.container-prode {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.equipos-prode {
+width: 50%;
+}
+
+.carousel-prode {
+width: 300px;
+}
+
 .espacios {
-  height: 10px;
+height: 10px;
 }
 
 .bg-prode {
-  background-color: var(--color-cards);
-  border-radius: var(--border-radius);
-}
-h1 {
-  text-align: center;
-  color: #0a3d62;
-  margin-bottom: 30px;
+background-color: var(--color-cards);
+border-radius: var(--border-radius);
 }
 
-/* Estilo para cada partido */
-.partido {
-  background: white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* ==========================
+NOSOTROS
+========================== */
+
+.container-nosotros {
+background-color: rgb(248, 242, 242);
+border-radius: var(--border-radius);
+padding: 10px;
+}
+/* ==========================
+FOOTER
+========================== */
+
+.bg-footer {
+background-color: var(--color-primary);
 }
 
-.equipo {
-  width: 35%;
-  font-weight: bold;
-  text-align: center;
+.separador-footer {
+border-top: 1px solid var(--color-subtitulos);
 }
 
-.vs {
-  font-weight: bold;
-  color: #555;
+.texto-copyright {
+color: rgba(255, 255, 255, 0.7);
 }
 
-.goles {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+footer {
+margin: 0;
+padding: 0;
 }
+/* ==========================
+RESPONSIVE
+========================== */
 
 @media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-  }
-  .container1{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .dato1{
-    padding: 5px;
-  }
-  .container-boton{
-    padding-top: 10px;
-  }
-  .container2{
-    width: 100%;
-  }
-  .figu{
-    width: 100%;
-    height: 100px;
-  }
+
+.container {
+flex-direction: column;
+align-items: stretch;
+padding: 30px;
+}
+
+.container1 {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.container-padre,
+.mvp {
+width: 100%;
+height: auto;
+flex-wrap: wrap;
+}
+
+.dato1 {
+padding: 5px;
+}
+
+.figu {
+width: 90px;
+height: 95px;
+}
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+.container {
+flex-wrap: wrap;
+}
+
+.container-padre,
+.mvp {
+width: 100%;
+height: auto;
+flex-wrap: wrap;
+}
+
 }
