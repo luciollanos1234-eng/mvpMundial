@@ -269,6 +269,18 @@ h6 {
 .figu:hover {
   transform: scale(1.1);
 }
+.mvp {
+  display: flex;
+  justify-content: center;
+   margin: 10px;
+  background-color: var(--color-cards);
+  padding: 15px;
+  width: 900px;
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
 .nombres {
   display: flex;
   justify-content: center;
@@ -303,6 +315,30 @@ h6 {
   margin: 0;
   padding: 50px;
   justify-content: center;
+  
+}
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .container-padre {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .container-padre {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 /* CONTENEDOR ROSARIO */
 h6 {
