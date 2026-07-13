@@ -459,3 +459,8 @@ span {
   border-radius: var(--border-radius);
   padding: 10px;
 }
+
+
+.navbar-toggler-icon {
+    filter: invert(1) brightness(100%)
+}
