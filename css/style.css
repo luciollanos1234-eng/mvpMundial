@@ -174,26 +174,49 @@ BOTONES
   gap: 10px;
   padding-top: 10px;
 }
-
-.boton,
-h6 {
-  padding: 10px 20px;
+.boton-partidos {
+  padding: 10px 100px;
   margin: 10px;
   border: var(--border-none);
   border-radius: var(--border-radius);
-  background-color: var(--font-background);
+  background-color: rgb(204, 1, 1);
+  color: white;
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: var(--font-grosor);
+  text-align: center;
+}
+.boton-partidos:hover {
   color: var(--color-texto);
+}
+.boton {
+  padding: 10px 40px;
+  margin: 10px;
+  border: var(--border-none);
+  border-radius: var(--border-radius);
+  background-color: rgb(204, 1, 1);
+  color: white;
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: var(--font-grosor);
   text-align: center;
-  animation: brillo 2s ease-in-out infinite alternate;
-}
-
-.boton:hover {
-  transform: scale(1.1);
   transition: 0.2s;
+}
+.boton:hover {
+  color: white;
+  background-color: rgb(204, 1, 1);
+  transform: scale(1.1);
+}
+h6 {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--font-background);
   color: var(--color-texto);
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: var(--font-grosor);
 }
 
 #estadisticas {
