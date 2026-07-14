@@ -70,7 +70,7 @@ NAVBAR
 .logomundial {
   height: 100px;
   width: auto;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transition: transform 0.3s;
 }
 .logomundial:hover {
     transform: scale(1.1); 
