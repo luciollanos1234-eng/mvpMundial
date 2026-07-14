@@ -307,6 +307,8 @@ PRODE
   font-family: var(--font-family);
   font-size: 30px;
   font-weight: var(--font-grosor);
+  display: flex;
+  justify-content: center;
   animation: brillo 2s ease-in-out infinite alternate;
 }
 
@@ -314,6 +316,8 @@ PRODE
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 500px;
+  align-items: center;
 }
 
 .equipos-prode {
@@ -331,6 +335,17 @@ PRODE
 .bg-prode {
   background-color: var(--color-cards);
   border-radius: var(--border-radius);
+}
+.goles {
+  width: 30px;
+  height: 30px;
+}
+.partido {
+  background-color: var(--color-texto);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* ==========================
